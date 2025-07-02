@@ -1,0 +1,99 @@
+/*
+Theme Name: ModernPress
+Description: Block editor styles for ModernPress theme.
+*/
+
+/* Add CSS custom properties for theme.json integration */
+:root {
+    --wp--preset--color--primary-blue: #0073aa;
+    --wp--preset--color--dark-blue: #005177;
+    --wp--preset--color--dark-gray: #333333;
+    --wp--preset--color--light-gray: #f8f9fa;
+    --wp--preset--color--white: #ffffff;
+    --wp--preset--color--black: #000000;
+    
+    --wp--preset--font-size--small: 14px;
+    --wp--preset--font-size--medium: 16px;
+    --wp--preset--font-size--large: 18px;
+    --wp--preset--font-size--x-large: 24px;
+    --wp--preset--font-size--xx-large: 32px;
+}
+
+.editor-styles-wrapper {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+    font-size: var(--wp--preset--font-size--large);
+    line-height: 1.6;
+    color: var(--wp--preset--color--dark-gray);
+}
+
+.editor-styles-wrapper .wp-block {
+    max-width: 720px; /* Match theme.json contentSize */
+}
+
+.editor-styles-wrapper .wp-block[data-align="wide"] {
+    max-width: 1200px; /* Match theme.json wideSize */
+}
+
+.editor-styles-wrapper .wp-block[data-align="full"] {
+    max-width: none;
+}
+
+.editor-styles-wrapper h1,
+.editor-styles-wrapper h2,
+.editor-styles-wrapper h3,
+.editor-styles-wrapper h4,
+.editor-styles-wrapper h5,
+.editor-styles-wrapper h6 {
+    font-weight: 600;
+    line-height: 1.3;
+    margin: 0 0 1rem;
+    color: var(--wp--preset--color--dark-gray);
+}
+
+.editor-styles-wrapper h1 { font-size: var(--wp--preset--font-size--xx-large); }
+.editor-styles-wrapper h2 { font-size: var(--wp--preset--font-size--x-large); }
+.editor-styles-wrapper h3 { font-size: var(--wp--preset--font-size--large); }
+.editor-styles-wrapper h4 { font-size: var(--wp--preset--font-size--medium); }
+.editor-styles-wrapper h5 { font-size: var(--wp--preset--font-size--medium); }
+.editor-styles-wrapper h6 { font-size: var(--wp--preset--font-size--medium); }
+
+.editor-styles-wrapper p {
+    margin: 0 0 1.5rem;
+}
+
+.editor-styles-wrapper a {
+    color: var(--wp--preset--color--primary-blue);
+    text-decoration: none;
+}
+
+.editor-styles-wrapper a:hover {
+    color: var(--wp--preset--color--dark-blue);
+    text-decoration: underline;
+}
+
+.editor-styles-wrapper .wp-block-quote {
+    border-left: 4px solid var(--wp--preset--color--primary-blue);
+    margin: 2rem 0;
+    padding-left: 1.5rem;
+    font-style: italic;
+}
+
+.editor-styles-wrapper .wp-block-pullquote {
+    border-top: 4px solid var(--wp--preset--color--primary-blue);
+    border-bottom: 4px solid var(--wp--preset--color--primary-blue);
+    margin: 2rem 0;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.editor-styles-wrapper .wp-block-button .wp-block-button__link {
+    background-color: var(--wp--preset--color--primary-blue);
+    border-radius: 5px;
+    color: var(--wp--preset--color--white);
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+}
+
+.editor-styles-wrapper .wp-block-button .wp-block-button__link:hover {
+    background-color: var(--wp--preset--color--dark-blue);
+}
